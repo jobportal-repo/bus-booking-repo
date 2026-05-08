@@ -1,7 +1,8 @@
 import axios from "axios";
 
+// Replace localhost with your Render backend URL
 const API = axios.create({
-  baseURL: "http://localhost:5000/api"
+  baseURL: "https://bus-booking-repo.onrender.com"
 });
 
 export const getBuses = () => API.get("/buses");
